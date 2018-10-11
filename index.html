@@ -38,7 +38,12 @@
       <!-- main image -->
       <div class="row">
         <div class="col-md-12"> 
-          <img src="img/main.jpg" class="img-fluid" alt="macbook displaying code">
+            <picture>
+              <source media="(min-width: 992px)" srcset="img/main_l.jpg">
+              <source media="(min-width: 768px)" srcset="img/main_m.jpg">
+              <source media="(min-width: 576px)" srcset="img/main_s.jpg">    
+              <img src="img/main_s.jpg" alt="macbook displaying code" class="img-fluid" >
+            </picture>
         </div>
       </div>
       
@@ -58,7 +63,7 @@
         </div>
         
         <div class="col-md-4 project">
-          <img src="img/project2.jpg" class="img-fluid project-img" alt="workdesk with drafts and layouths">
+          <img src="img/project2.jpg" class="img-fluid project-img" alt="workdesk with drafts and layouts">
           <h3>Project 2</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <a href="https://github.com/" target="_blank">View on GitHub</a>
