@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" >
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-  <title>Fredrik Boukharta | Portfolio</title>
+  <title>Portfolio | Fredrik Boukharta</title>
 </head>
 
 <body>
@@ -17,65 +17,92 @@
 
     <header>
       <div class="row header">
-        <div class="col-md-4">
-          <img src="img/logo.jpg" alt="portfolio logo" class="logo-img">  
+
+        <div class="col-12 col-lg-6 top-name">
+          <a href="index.html" class="no-underline"><h1 id="name">Fredrik Boukharta</h1></a>
         </div>
 
-        <div class="col-md-8 align-right">
-          <h1>Fredrik Boukharta</h1>
-          <h5>Front-End Web Developer</h5>  
-        </div>
+        <div class="col-12 col-lg-6 align-right top-links">
+          <a class="top-link" href="about.html">About</a>
+          <a class="top-link" href="contact.html">Contact</a>
+         </div>
+
       </div>
 
       <div class="row">
-          <div class="col-md-12"> 
-            <hr>
-          </div>
+        <div class="col-md-12"> 
+          <hr>
+        </div>
       </div> 
     </header> 
 
     <main>
       <!-- main image -->
       <div class="row">
-        <div class="col-md-12"> 
-            <picture>
-              <source media="(min-width: 992px)" srcset="img/main_l.jpg">
-              <source media="(min-width: 768px)" srcset="img/main_m.jpg">
-              <source media="(min-width: 576px)" srcset="img/main_s.jpg">    
-              <img src="img/main_s.jpg" alt="macbook displaying code" class="img-fluid" >
-            </picture>
+        <div class="col-6 mx-auto"> 
+          <img src="img/laptop-leaf.jpg" alt="macbook and a plant" class="img-fluid main-image">
         </div>
-      </div>
-      
+      </div> 
+        
       <div class="row">
         <div class="col-md-12"> 
-          <h2 class="projects-heading">Featured Work</h2>
+          <h2 class="projects-heading">Featured Projects</h2>
         </div>
       </div>
       
       <!-- projects -->
-      <div class="row">
-        <div class="col-md-4 project">
+      <div class="row justify-content-center project">
+
+        <div class="col-8 col-md-4 col-lg-4">
           <a href="https://fredbouk.github.io/memory-game/" target="_blank"><img src="img/memory-game.jpg" class="img-fluid project-img" alt="gameboard of memory game"></a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6">
           <h3>Memory Game</h3>
-          <p>A version of the classic memory game 'Concentration'.</p>
-          <a href="https://github.com/fredbouk/memory-game" target="_blank">View on GitHub</a>
+          <p>Given a static HTML and CSS starter code, my task was to build an interactive version of the classic memory game 'Concentration'.<br>
+             I coded the game logic, move counter, timer, reset button, star rating etc.</p>
+          <p><span class="skills">Skills:</span> HTML, CSS, DOM Manipulation, JavaScript</p>
+          <a href="https://github.com/fredbouk/memory-game " class="no-underline" target="_blank"><p>View on GitHub</p></a>
         </div>
-        
-        <div class="col-md-4 project">
+
+      </div>  
+
+
+      <div class="row justify-content-center project">
+
+        <div class="col-8 col-md-4 col-lg-4">
           <a href="https://github.com/fredbouk/feedreader-testing/blob/master/jasmine/spec/feedreader.js" target="_blank"><img src="img/feedreader-testing.jpg" class="img-fluid project-img" alt="jasmine test specs"></a>
-          <h3>Feedreader Testing</h3>
-          <p>Test suite of a web-based Feedreader application. Written in the JavaScript testing framework Jasmine.</p>
-          <a href="https://github.com/fredbouk/feedreader-testing" target="_blank">View on GitHub</a>
         </div>
-      
-        <div class="col-md-4 project">
-          <img src="img/project3.jpg" class="img-fluid project-img" alt="workdesk with start up chart">
-          <h3>Project 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="https://github.com/" target="_blank">View on GitHub</a>
-        </div>    
-      </div>
+
+        <div class="col-12 col-md-8 col-lg-6">
+          <h3>Feedreader Testing</h3>
+          <p>I received a web-based application that reads RSS feeds.<br> 
+             It contained an incomplete test suite written in the JavaScript testing framework Jasmine with only one test. 
+             My task was to analyze the HTML, CSS and JavaScript code and use Jasmine to write a number of tests against the application and finish the incomplete test suite.</p>
+          <p><span class="skills">Skills:</span> Jasmine Testing Framework</p>
+          <a href="https://github.com/fredbouk/feedreader-testing" class="no-underline" target="_blank"><p>View on GitHub</p></a>
+        </div>
+  
+      </div>  
+
+
+      <div class="row justify-content-center project">
+
+        <div class="col-8 col-md-4 col-lg-4">
+          <a href="https://github.com/fredbouk/restaurant-reviews-app" target="_blank"><img src="img/restaurant-reviews-app.jpg" class="img-fluid project-img" alt="website with map and restaurants list"></a>
+        </div>
+
+        <div class="col-12 col-md-8 col-lg-6">
+          <h3>Restaurant Reviews App</h3>
+          <p>I was provided with code for a restaurant reviews website. The code had a lot of issues and the site was barely usable. 
+             I made the site fully responsive on desktop, tablet, and mobile displays and also made it accessible to screen reader users. 
+             In addition I added a service worker script that caches requests making the site accessible when a user is offline.</p>
+          <p><span class="skills">Skills:</span> Flexbox, Media Queries, WAI-ARIA, Service Worker, Fetch API, Cache API</p>
+          <a href="https://github.com/fredbouk/restaurant-reviews-app" class="no-underline" target="_blank"><p>View on GitHub</p></a>
+        </div>
+    
+      </div>  
+
     </main> 
   
     <footer>

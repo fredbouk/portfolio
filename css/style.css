@@ -1,6 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #eee;
+  font-size: 112.5%;
 }
 
 
@@ -11,60 +12,140 @@ p {
   color: #000;
 }
 
+h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: medium;
+}
 
 a {
   color: #000 !important;
-  text-decoration: none !important;
- }
-
-
-hr {
-  border-width: 2px;
 }
 
 
-/*header*/
+/* Header */
 .header {
   margin-top: 20px;
 }
 
+#name {
+  font-size: 1.4em;
+  font-weight: 700;
+}
 
-.logo-img {
-  width: 71px;
-  height: 57px;
-  margin-top: 10px;
+.no-underline {
+  text-decoration: none !important;
+}
+
+.top-link {
+  font-size: 112.5%;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: #627788 !important;
+}
+
+hr {
+  border-width: 2px;
+  margin-top: inherit;
+}
+
+.main-image {
+  margin-top: 40px;
+  border-radius: 5px;
 }
 
 
-.align-right {
-  text-align: right;
-}
-
-
-/*body*/
+/* Body */
 .projects-heading {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   text-transform: uppercase;
   color: #627788;
-  font-size: 28px;
+  font-size: 24px;
+  text-align: center;
  }
-
 
 .project {
   margin-bottom: 40px;
 }
 
-
 .project-img {
   margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+ }
+
+ .large {
+  font-size: large;
+ }
+
+ .skills {
+   font-weight: bold;
  }
 
  
- /*footer*/
+ /* Footer */
  .glyphicon {
   font-size: 28px; 
   margin-left: 20px;
   margin-bottom: 30px;
   margin-right: 20px;
+}
+
+
+/******** Media query for mobiles and tablets ********/
+@media screen and (min-width: 320px) and (max-width: 991px)  {
+
+  .top-name {
+    text-align: center;
+  }
+
+  #name {
+    margin-bottom: 0;
+  }
+
+  .top-links {
+    text-align: center;
+  }
+
+}
+
+
+/******** Media query for large screens ********/
+@media screen and (min-width: 992px) {
+
+  .align-right {
+    text-align: right;
+  }
+
+  .top-links {
+    margin-top: 2px;
+  }
+
+}
+
+
+/*===================== About =====================*/
+.me {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+/*===================== Contact =====================*/
+#contact-me {
+  margin-top: 40px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.link-text {
+  display: inline;
+  font-size: inherit;
 }
