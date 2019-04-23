@@ -4,8 +4,8 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #eee;
   font-size: 112.5%;
+  background-image: url("../img/crossword.png");
 }
 
 h1,
@@ -47,7 +47,6 @@ a {
   font-size: 112.5%;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  color: #627788 !important;
 }
 
 hr {
